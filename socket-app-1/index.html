@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socket.io</title>
+  </head>
+  <body>
+    <h1>Socket Io</h1>
+
+    <h1 id="message"></h1>
+
+    <!-- <h1 id="myTime"></h1> -->
+    <input type="text" name="" id="name" />
+    <button onclick="send()" id="send">Send</button>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- <script>
+      let socket = io();
+      socket.on("myEvent", function (msg) {
+        // document.write(data);
+        document.getElementById("myTime").innerHTML = " ";
+        document.getElementById("myTime").innerHTML = msg;
+      });
+    </script> -->
+
+    <!-- <script>
+      let socket = io();
+      function send() {
+        // !sending data to server with purify method
+        let name = document.getElementById("name").value;
+        // alert(name);
+        socket.send(name);
+      }
+    </script> -->
+    <!-- <script>
+      let socket = io();
+      function send() {
+        // !sending data to server with custom method
+        let name = document.getElementById("name").value;
+        // alert(name);
+        socket.emit("MyEvent", name);
+      }
+    </script> -->
+    <!-- <script>
+      let socket = io();
+      socket.on("MyBroadcast", (data) => {
+        document.getElementById("message").innerHTML = data;
+      });
+    </script> -->
+
+    <!-- <script>
+      let socket = io('/sell');
+      socket.on("MyEvent", (data) => {
+        document.getElementById("message").innerHTML = data;
+      }); -->
+    </script>
+  </body>
+</html>
